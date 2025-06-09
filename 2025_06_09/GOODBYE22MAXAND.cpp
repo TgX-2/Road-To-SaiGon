@@ -40,47 +40,45 @@ template<typename T1, typename T2> bool maxi(T1 &a, T2 b)
     {if (a < b) a = b; else return 0; return 1;}
 /*-----------------------------*/
 
-const int mod = 1e9 + 7;
+int x, l, r, k;
+int f[35][3];
+int a[35];
 
-int t, d;
-string s;
-int f[22][(1 << 7)];
-int a[22];
-
-int dp(int id, int mask) {
-	if (id > len(s)) return (mask == 0);
-	if (~f[id][mask]) return f[id][mask];
+int dp(int id, bool isless) {
+	if (id < 0) return 1;
+	if (~f[id][isless]) return f[id][isless];
 
 	int ans = 0;
-
-	FOR(i, 0, 9) {
-		int cur = i + (mask & 1);
-		if (cur <= a[id]) (ans += dp(id + 1, mask >> 1)) %= mod;
-		else (ans += dp(id + 1, (mask >> 1) | (1 << (d - 1)))) %= mod;
+	bool lim = (isless ? a[id] : 1);	
+	FOR(i, 0, lim) {
+		if (i == 0 and (x & (1 << id)) != 0) continue;
+		bool nisless = (i == lim ? isless : 0);
+		ans += dp(id - 1, nisless);
 	}
-
-	return f[id][mask] = ans; 
+	return f[id][isless] = ans;
 }
 
-int get() {
-	int idx = 1;
-	FORD(i, len(s) - 1, 0) {
-		a[idx] = (s[i] - '0');
-		idx++;
-	}
-
-	idx--;
-	memo(f, -1);
-	return dp(1, 0);
+int get(int val){
+	FOR(i, 0, 22) FOR(j, 0, 1) f[i][j] = -1;
+	FOR(i, 0, 20) a[i] = (((val >> i) & 1));
+	return dp(20, 1);
 }
 
 void process() {
-	cin >> t >> d;
-	while(t--) {
-		cin >> s;	
+    int t; cin >> t;
+    while(t--) {
+    	cin >> l >> r >> k;
 
-		cout << (get() - 2 + mod) % mod __ ;
-	}
+    	x = 0;
+    	FORD(i, 20, 0) {
+    		x |= (1 << i);
+    		int cost = get(r) - get(l - 1);
+    		// cout << cost __ ;
+    		if (cost == 0 or r - l + 1 - cost > k) x ^= (1 << i);
+    		// cout << bitset<20>(x) __ ;
+    	}
+    	cout << x __ ;
+    }
 }
 
 
@@ -105,5 +103,11 @@ ______________TgX______________ {
 ================================+
 |OUTPUT                         |
 --------------------------------|
+10
+11
+100
+101
+
+1 : 1
 
 ===============================*/
