@@ -48,9 +48,8 @@ int poww(int a, int b) {
 	return (x * x) % mod;
 }
 
-const int maxn = 1e5 + 7;
+map<int, int> dp;
 int n;
-int dp[maxn];
 vector<int> val;
 
 void process() {
