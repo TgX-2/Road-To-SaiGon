@@ -40,35 +40,6 @@ template<typename T1, typename T2> bool maxi(T1 &a, T2 b)
     {if (a < b) a = b; else return 0; return 1;}
 /*-----------------------------*/
 
-int n;
-
-int ans = 0;
-vector<int> val;
-
-bool check() {
-	if (len(val) == 1) {
-		if (n == 1) return 1;
-		return 0;
-	}
-
-	FOR(i, 0, len(val) - 1) FOR(j, 0, len(val) - 1) if (i != j) 
-		if (__gcd(val[i], val[j]) != 1) return 0;
-	return 1; 
-}
-
-void dfs(int x) {
-	if (x == 0) {
-		sort(all(val));
-		if (check()) ans++;
-	}
-
-	FOR(i, 1, x) {
-		val.pb(i);
-		dfs(x - i);
-		val.pop_back();
-	}
-}
-
 const int mod = 1e9 + 7;
 int poww(int a, int b) {
 	if (b == 0) return 1;
@@ -77,22 +48,32 @@ int poww(int a, int b) {
 	return (x * x) % mod;
 }
 
+const int maxn = 1e5 + 7;
+int n;
+int dp[maxn];
+vector<int> val;
+
 void process() {
 	cin >> n;
-	if (n == 1 or n == 2) return cout << 1, void();
-	cout << (poww(2, n - 1) - 1 + mod) % mod;
+	for(int i = 1; i * i <= n; i++) {
+		if (n % i == 0) {
+			val.pb(i);
+			if (i != n / i) val.pb(n / i);
+		}
+	}
 
-    // cin >> n;
-	// FOR(i, 5, 15) {
-	// 	n = i;
-	// 	ans = 0;
-	//     val.clear();
-	//     dfs(n);
-	//     cout << ans ___ ;
 
-	//     // cout << (1 - 2 * n + 2 * n * n) / ((1 - n) * (1 - 2 * n)) __ ;
-	// }
+	sort(all(val));
 
+	FORD(i, len(val) - 1, 0) {
+		dp[val[i]] = poww(2, n / val[i] - 1);
+		FOR(j, i + 1, len(val) - 1) {
+			if (val[j] % val[i] == 0) 
+				dp[val[i]] = (dp[val[i]] - dp[val[j]] + mod) % mod;
+		}
+	}
+
+	cout << dp[1];
 }
 
 
