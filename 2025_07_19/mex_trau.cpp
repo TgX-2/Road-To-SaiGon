@@ -39,40 +39,10 @@ template<typename T1, typename T2> bool mini(T1 &a, T2 b)
 template<typename T1, typename T2> bool maxi(T1 &a, T2 b)
     {if (a < b) a = b; else return 0; return 1;}
 /*-----------------------------*/
-    	
-const int mod = 1e9 + 7;
-int poww(int a, int b) {
-	if (b == 0) return 1;
-	int x = poww(a, b / 2);
-	if (b & 1) return ((x * x) % mod * a) % mod;
-	return (x * x) % mod;
-}
 
-map<int, int> dp;
-int n;
-vector<int> val;
 
 void process() {
-	cin >> n;
-	for(int i = 1; i * i <= n; i++) {
-		if (n % i == 0) {
-			val.pb(i);
-			if (i != n / i) val.pb(n / i);
-		}
-	}
-
-
-	sort(all(val));
-
-	FORD(i, len(val) - 1, 0) {
-		dp[val[i]] = poww(2, n / val[i] - 1);
-		FOR(j, i + 1, len(val) - 1) {
-			if (val[j] % val[i] == 0) 
-				dp[val[i]] = (dp[val[i]] - dp[val[j]] + mod) % mod;
-		}
-	}
-
-	cout << dp[1];
+    sdsdf
 }
 
 
@@ -81,9 +51,9 @@ void process() {
 ______________TgX______________ {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);  
-    if (fopen("pts.inp", "r")) {
-        freopen("pts.inp", "r", stdin);
-        freopen("pts.out", "w", stdout);
+    if (fopen("temp.inp", "r")) {
+        freopen("temp.inp", "r", stdin);
+        freopen("temp.out", "w", stdout);
     }
     process();
     cerr << "Time: " << 1.0 * clock() / CLOCKS_PER_SEC __ ;

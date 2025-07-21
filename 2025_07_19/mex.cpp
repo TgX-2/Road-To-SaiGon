@@ -39,40 +39,53 @@ template<typename T1, typename T2> bool mini(T1 &a, T2 b)
 template<typename T1, typename T2> bool maxi(T1 &a, T2 b)
     {if (a < b) a = b; else return 0; return 1;}
 /*-----------------------------*/
-    	
-const int mod = 1e9 + 7;
-int poww(int a, int b) {
-	if (b == 0) return 1;
-	int x = poww(a, b / 2);
-	if (b & 1) return ((x * x) % mod * a) % mod;
-	return (x * x) % mod;
-}
 
-map<int, int> dp;
-int n;
-vector<int> val;
 
 void process() {
-	cin >> n;
-	for(int i = 1; i * i <= n; i++) {
-		if (n % i == 0) {
-			val.pb(i);
-			if (i != n / i) val.pb(n / i);
-		}
-	}
+    int t; cin >> t;
 
+    while(t--){
+        int m, n; cin >> m >> n;
+        int total = m * n;
 
-	sort(all(val));
+        vector<pair<int, int>> pos(total, {-1, -1});
+    
+        FOR(i, 0, m - 1) FOR(j, 0, n - 1) {
+            int x; cin >> x;
+            if(0 <= x and x < total)
+                pos[x] = {i, j};
+        }
+    
+        int miss = 0;
+        while(miss < total and pos[miss].fi != -1)
+            miss++;
+        
+        set<pair<int, int>> s;
+        int ans = miss;
+        FOR(i, 0, miss - 1) {
+            int r = pos[i].fi;
+            int c = pos[i].se;
 
-	FORD(i, len(val) - 1, 0) {
-		dp[val[i]] = poww(2, n / val[i] - 1);
-		FOR(j, i + 1, len(val) - 1) {
-			if (val[j] % val[i] == 0) 
-				dp[val[i]] = (dp[val[i]] - dp[val[j]] + mod) % mod;
-		}
-	}
+            auto it = s.lower_bound({r, c});
+            if(it != s.begin()){
+                auto itl = prev(it);
+                if(itl->se > c){
+                    ans = i;
+                    break;
+                }
+            }
 
-	cout << dp[1];
+            if(it != s.end()){
+                auto itr = it;
+                if(itr->se < c){
+                    ans = i;
+                    break;
+                }
+            }
+            s.insert({r, c});
+        }
+        cout << ans __ ;
+    }
 }
 
 
@@ -81,9 +94,9 @@ void process() {
 ______________TgX______________ {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);  
-    if (fopen("pts.inp", "r")) {
-        freopen("pts.inp", "r", stdin);
-        freopen("pts.out", "w", stdout);
+    if (fopen("mex.inp", "r")) {
+        freopen("mex.inp", "r", stdin);
+        freopen("mex.out", "w", stdout);
     }
     process();
     cerr << "Time: " << 1.0 * clock() / CLOCKS_PER_SEC __ ;
@@ -97,5 +110,4 @@ ______________TgX______________ {
 ================================+
 |OUTPUT                         |
 --------------------------------|
-
 ===============================*/
