@@ -1,0 +1,400 @@
+Time: 0
+Time elapsed: 0s
+Test 1: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 2: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 3: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 4: Right!
+---------------
+Time: 0
+Time elapsed: 0.005s
+Test 5: Right!
+---------------
+Time: 0
+Time elapsed: 0.003s
+Test 6: Right!
+---------------
+Time: 0
+Time elapsed: 0.002s
+Test 7: Right!
+---------------
+Time: 0
+Time elapsed: 0.002s
+Test 8: Right!
+---------------
+Time: 0.002
+Time elapsed: 0s
+Test 9: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 10: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 11: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 12: Right!
+---------------
+Time: 0
+Time elapsed: 0.002s
+Test 13: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 14: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 15: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 16: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 17: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 18: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 19: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 20: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 21: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 22: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 23: Right!
+---------------
+Time: 0.015
+Time elapsed: 0.015s
+Test 24: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 25: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 26: Right!
+---------------
+Time: 0
+Time elapsed: 0.002s
+Test 27: Right!
+---------------
+Time: 0
+Time elapsed: 0.006s
+Test 28: Right!
+---------------
+Time: 0.001
+Time elapsed: 0s
+Test 29: Right!
+---------------
+Time: 0
+Time elapsed: 0.015s
+Test 30: Right!
+---------------
+Time: 0
+Time elapsed: 0.003s
+Test 31: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 32: Right!
+---------------
+Time: 0.015
+Time elapsed: 0.015s
+Test 33: Right!
+---------------
+Time: 0
+Time elapsed: 0.008s
+Test 34: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 35: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 36: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 37: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 38: Right!
+---------------
+Time: 0
+Time elapsed: 0.015s
+Test 39: Right!
+---------------
+Time: 0
+Time elapsed: 0.012s
+Test 40: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 41: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 42: Right!
+---------------
+Time: 0.015
+Time elapsed: 0.003s
+Test 43: Right!
+---------------
+Time: 0.001
+Time elapsed: 0.002s
+Test 44: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 45: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 46: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 47: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 48: Right!
+---------------
+Time: 0.015
+Time elapsed: 0s
+Test 49: Right!
+---------------
+Time: 0.003
+Time elapsed: 0s
+Test 50: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 51: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 52: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 53: Right!
+---------------
+Time: 0
+Time elapsed: 0.003s
+Test 54: Right!
+---------------
+Time: 0.002
+Time elapsed: 0s
+Test 55: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 56: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 57: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 58: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 59: Right!
+---------------
+Time: 0
+Time elapsed: 0.015s
+Test 60: Right!
+---------------
+Time: 0.003
+Time elapsed: 0s
+Test 61: Right!
+---------------
+Time: 0.015
+Time elapsed: 0.001s
+Test 62: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 63: Right!
+---------------
+Time: 0
+Time elapsed: 0.008s
+Test 64: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 65: Right!
+---------------
+Time: 0.001
+Time elapsed: 0s
+Test 66: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 67: Right!
+---------------
+Time: 0.015
+Time elapsed: 0.015s
+Test 68: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 69: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 70: Right!
+---------------
+Time: 0.001
+Time elapsed: 0s
+Test 71: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 72: Right!
+---------------
+Time: 0.003
+Time elapsed: 0.004s
+Test 73: Right!
+---------------
+Time: 0.003
+Time elapsed: 0.008s
+Test 74: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 75: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 76: Right!
+---------------
+Time: 0
+Time elapsed: 0.002s
+Test 77: Right!
+---------------
+Time: 0
+Time elapsed: 0.002s
+Test 78: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 79: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 80: Right!
+---------------
+Time: 0.005
+Time elapsed: 0.006s
+Test 81: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.001s
+Test 82: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 83: Right!
+---------------
+Time: 0.011
+Time elapsed: 0.004s
+Test 84: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 85: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 86: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 87: Right!
+---------------
+Time: 0.005
+Time elapsed: 0.006s
+Test 88: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.007s
+Test 89: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 90: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.001s
+Test 91: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 92: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 93: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 94: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 95: Right!
+---------------
+Time: 0.005
+Time elapsed: 0.002s
+Test 96: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 97: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 98: Right!
+---------------
+Time: 0.002
+Time elapsed: 0.002s
+Test 99: Right!
+---------------
+Time: 0
+Time elapsed: 0s
+Test 100: Right!
+---------------
