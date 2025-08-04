@@ -15,15 +15,15 @@ vector<array<int, 3>> specedge;
 
 int d1[maxn], d2[maxn];
 
-void Dijkstra(int start, int d[]) {
+void dijk(int start, int d[]) {
 	for(int i = 0; i <= n + 1; i++) d[i] = 1e18;
     d[start] = 0;
 
-    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
-    pq.push(make_pair(0, start));
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+    q.push({0, start});
 
-    while (!pq.empty()) {
-        pair<int, int> top = pq.top(); pq.pop();
+    while (!q.empty()) {
+        pair<int, int> top = q.top(); q.pop();
         int dist_u = top.first;
         int u = top.second;
 
@@ -34,7 +34,7 @@ void Dijkstra(int start, int d[]) {
 
             if (d[v] > d[u] + w) {
                 d[v] = d[u] + w;
-                pq.push({d[v], v});
+                q.push({d[v], v});
             }
         }
     }
@@ -43,8 +43,10 @@ void Dijkstra(int start, int d[]) {
 main() {
     ios::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
-    freopen("hack.inp", "r", stdin);
-    freopen("hack.out", "w", stdout);
+    if (fopen("temp.inp", "r")) {
+        freopen("temp.inp", "r", stdin);
+        freopen("temp.out", "w", stdout);
+    }
 
     cin >> n >> m >> k >> s1 >> s2 >> t;
 
@@ -62,21 +64,21 @@ main() {
         specedge.push_back({u, idx, r[i]});
     }
 
-    while (true) {
-        Dijkstra(s1, d1);
-        Dijkstra(s2, d2);
+    while (1) {
+        dijk(s1, d1);
+        dijk(s2, d2);
 
-        bool changed = false;
+        bool changed = 0;
 
         for (int i = 1; i <= k; ++i) {
             if (!used[i] and d1[st[i]] <= d2[st[i]]) {
-                used[i] = true;
+                used[i] = 1;
 
                 int u = specedge[i - 1][0];
                 int idx = specedge[i - 1][1];
 
                 g[u][idx].second = l[i];
-                changed = true;
+                changed = 1;
             }
         }
 
@@ -99,5 +101,6 @@ main() {
     }
     cout << '\n';
 
+    cerr << "Time : " << clock() * 1.0 / CLOCKS_PER_SEC << " ms." << endl;
     return 0;
 }
